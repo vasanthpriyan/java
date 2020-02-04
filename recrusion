@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+class Main
+{
+public static void main(String args[])
+{
+Scanner aa=new Scanner(System.in);
+int a=aa.nextInt();
+int n=aa.nextInt();
+//System.out.println((int)(Math.pow(a,n)));
+System.out.println(mul(a,n));
+}
+public static int mul(int a1,int b)
+{
+if(b==0)
+{
+return 1;
+}
+
+else
+{
+
+return a1*mul(a1,b-1);
+
+}
+
+
+
+}
+}
